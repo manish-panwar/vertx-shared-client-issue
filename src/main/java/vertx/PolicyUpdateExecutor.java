@@ -30,7 +30,7 @@ public class PolicyUpdateExecutor {
 
     @PostConstruct
     public void init() {
-        vertx.setPeriodic(3000, doNothing -> {
+        vertx.setPeriodic(1000, doNothing -> {
            executeUpdate();
         });
     }
